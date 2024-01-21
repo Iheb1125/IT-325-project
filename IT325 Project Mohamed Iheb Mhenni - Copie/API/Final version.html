@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>API INTERFACE</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>WEB SERVICE (IT 325) API PROJECT (Religion Related API Interface)</h1>
+
+        <div class="endpoint">
+            <h2>Get Quran Edition</h2>
+            <label for="quranEdition">Enter Quran Edition:</label>
+            <input type="text" id="quranEdition" placeholder="Enter Quran Edition (e.g., en.asad)">
+            <button onclick="getQuranEdition()">Get Quran Edition</button>
+            <div id="resultQuranEdition"></div>
+        </div>
+
+        <div class="endpoint">
+            <h2>Get Quran Page</h2>
+            <label for="page">Enter Quran Page Number:</label>
+            <input type="number" id="page" placeholder="Enter Quran Page Number">
+            <label for="pageEdition">Enter Quran Edition:</label>
+            <input type="text" id="pageEdition" placeholder="Enter Quran Edition (e.g., en.asad)">
+            <button onclick="getQuranPage()">Get Quran Page</button>
+            <div id="resultQuranPage"></div>
+        </div>
+
+        <div class="endpoint">
+            <h2>Get Sajda Ayahs</h2>
+            <label for="sajdaEdition">Enter Quran Edition:</label>
+            <input type="text" id="sajdaEdition" placeholder="Enter Quran Edition (e.g., en.asad)">
+            <button onclick="getSajdaAyahs()">Get Sajda Ayahs</button>
+            <div id="resultSajdaAyahs"></div>
+        </div>
+
+        <div class="endpoint">
+            <h2>Get Asma Al Husna</h2>
+            <label for="asmaNumbers">Enter Asma Al Husna Numbers:</label>
+            <input type="text" id="asmaNumbers" placeholder="Enter Asma Al Husna Numbers (e.g., 1,2,3)">
+            <button onclick="getAsmaAlHusna()">Get Asma Al Husna</button>
+            <div id="resultAsmaAlHusna"></div>
+        </div>
+
+        <div class="endpoint">
+            <h2>Get Prayer Times</h2>
+            <label for="prayerCity">Enter City:</label>
+            <input type="text" id="prayerCity" placeholder="Enter City">
+            <label for="prayerCountry">Enter Country:</label>
+            <input type="text" id="prayerCountry" placeholder="Enter Country">
+            <button onclick="getPrayerTimes()">Get Prayer Times</button>
+            <div id="resultPrayerTimes"></div>
+        </div>
+
+        <div class="endpoint">
+            <h2>Get Calendar by City</h2>
+            <label for="calendarYear">Enter Year:</label>
+            <input type="number" id="calendarYear" placeholder="Enter Year">
+            <label for="calendarMonth">Enter Month:</label>
+            <input type="number" id="calendarMonth" placeholder="Enter Month">
+            <label for="calendarCity">Enter City:</label>
+            <input type="text" id="calendarCity" placeholder="Enter City">
+            <label for="calendarCountry">Enter Country:</label>
+            <input type="text" id="calendarCountry" placeholder="Enter Country">
+            <button onclick="getCalendarByCity()">Get Calendar by City</button>
+            <div id="resultCalendarByCity"></div>
+        </div>
+        
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
